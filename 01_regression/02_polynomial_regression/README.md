@@ -9,8 +9,8 @@ $$
 $$
 
 Where:  
-- \( d \) = degree of polynomial  
-- \( a_0, a_1, \dots, a_d \) = coefficients we want to calculate  
+- \($d$\) = degree of polynomial  
+- \($a_0, a_1, \dots, a_d$\) = coefficients we want to calculate  
 
 ---
 
@@ -67,7 +67,7 @@ $$
 
 This matches exactly the formula you described earlier:
 
-- First row → \( [n, \bar{x}, \bar{x}^2, ..., \bar{x}^d] \)  
+- First row &rarr; \($[n, \bar{x}, \bar{x}^2, ..., \bar{x}^d]$\)  
 - Actually using **summations**, not means  
 
 ---
@@ -132,7 +132,7 @@ $$
 ## 8. Intuition Behind Polynomial Regression
 
 - We map input \( x \) to:  
-  \( [x, x^2, x^3, ..., x^d] \)
+  \($[x, x^2, x^3, ..., x^d]$\)
 - Then we perform **linear regression over expanded features**
 - Higher degrees = more flexible curve
 - Too high degree = **overfitting**
