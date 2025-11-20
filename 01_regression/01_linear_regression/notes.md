@@ -14,9 +14,7 @@ The goal is to fit a **line (or hyperplane for multiple variables)** that best a
 - **Intuition:**  
   - The line tries to pass **as close as possible** to all points.  
   - The “closeness” is measured using errors (residuals):  
-    $
-    residual = y - \hat{y}
-    $  
+    $residual = y - \hat{y}$  
 
 **Key Concept:** Linear Regression finds the line that **minimizes total error**.  
 
@@ -25,28 +23,18 @@ The goal is to fit a **line (or hyperplane for multiple variables)** that best a
 ## 2. Formulas (Build Your Own Logic)
 
 ### 2.1 Predicted Value
-$
-\hat{y} = mX + c
-$
+$\hat{y} = mX + c$
 
 ### 2.2 Error / Residual
-$
-error_i = y_i - \hat{y}_i
-$
+$error_i = y_i - \hat{y}_i$
 
 ### 2.3 Loss Function (Mean Squared Error)
-$
-MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-$
+$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 
 ### 2.4 Slope (m) and Intercept (c) for Single Variable
-$
-m = \frac{\sum (X_i - \bar{X})(y_i - \bar{y})}{\sum (X_i - \bar{X})^2}
-$
+$m = \frac{\sum (X_i - \bar{X})(y_i - \bar{y})}{\sum (X_i - \bar{X})^2}$
 
-$
-c = \bar{y} - m \cdot \bar{X}
-$
+$c = \bar{y} - m \cdot \bar{X}$
 
 - $X_i$, $y_i$ &rarr; individual data points  
 - $\bar{X}$, $\bar{y}$ &rarr; means of X and y  
@@ -77,20 +65,12 @@ $
 - Each step adjusts slope (m) and intercept (c) to reduce error.
 
 **Update Rules:**  
-$
-m = m - lr \cdot \frac{\partial MSE}{\partial m}
-$  
-$
-c = c - lr \cdot \frac{\partial MSE}{\partial c}
-$
+$m = m - lr \cdot \frac{\partial MSE}{\partial m}$  
+$c = c - lr \cdot \frac{\partial MSE}{\partial c}$
 
 Gradients:  
-$
-\frac{\partial MSE}{\partial m} = -\frac{2}{n} \sum X_i (y_i - (mX_i + c))
-$  
-$
-\frac{\partial MSE}{\partial c} = -\frac{2}{n} \sum (y_i - (mX_i + c))
-$
+$\frac{\partial MSE}{\partial m} = -\frac{2}{n} \sum X_i (y_i - (mX_i + c))$  
+$\frac{\partial MSE}{\partial c} = -\frac{2}{n} \sum (y_i - (mX_i + c))$
 
 - $lr$ &rarr; learning rate, small number controlling step size  
 - Repeat until MSE converges &rarr; best slope and intercept  
@@ -100,19 +80,13 @@ $
 ### 4.2 Multiple Linear Regression
 
 - For multiple features:  
-$
-y = m_1 X_1 + m_2 X_2 + ... + m_n X_n + c
-$
+$y = m_1 X_1 + m_2 X_2 + ... + m_n X_n + c$
 
 - Concept: Find a **hyperplane** that minimizes total squared error.  
 - Can be solved manually with **matrix operations**:
-$
-\hat{\beta} = (X^T X)^{-1} X^T y
-$  
+$\hat{\beta} = (X^T X)^{-1} X^T y$  
 - Prediction:  
-$
-\hat{y} = X \hat{\beta}
-$  
+$\hat{y} = X \hat{\beta}$  
 
 **Intuition:** Each feature has a slope &rarr; influence on y; intercept adjusts baseline.
 
