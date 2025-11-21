@@ -75,14 +75,14 @@ Useful when:
 Adds penalty terms to avoid overfitting.
 
 #### Ridge Regression (L2)
-$
+$$
 \text{Loss} = \sum (y-\hat{y})^2 + \lambda\sum b_i^2
-$
+$$
 
 #### Lasso Regression (L1)
-$
+$$
 \text{Loss} = \sum (y-\hat{y})^2 + \lambda\sum |b_i|
-$
+$$
 
 #### Elastic Net = L1 + L2 combined
 
@@ -96,9 +96,9 @@ Used when:
 ### 3.5 Logistic Regression (Classification)
 Despite the name, it predicts **probability**, not regression values.
 
-$
+$$
 P(y=1|X) = \sigma(b_0 + b_1x)
-$
+$$
 
 Used for:
 - Spam/not spam  
