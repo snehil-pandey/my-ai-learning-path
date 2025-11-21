@@ -135,14 +135,12 @@ Where:
 ### 4.2 Polynomial Regression Matrix (degree d)
 
 A =
-$$
-\begin{bmatrix}
+$\begin{bmatrix}
 n & \sum x & \sum x^2 & \dots & \sum x^d \\
 \sum x & \sum x^2 & \sum x^3 & \dots & \sum x^{d+1} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 \sum x^d & \sum x^{d+1} & \dots & \dots & \sum x^{2d}
-\end{bmatrix}
-$$
+\end{bmatrix}$
 
 B =
 $$
