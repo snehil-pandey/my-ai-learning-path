@@ -14,7 +14,7 @@ General form:
 $y = f(X) + \epsilon$
 
 Where  
-- \($f(X)$\) = model  
+- $f(X)$ = model  
 - \($\epsilon$\) = error/noise
 
 ---
