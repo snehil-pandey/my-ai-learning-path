@@ -1,4 +1,4 @@
-# 📘 Regression – Collective Notes
+# Regression – Collective Notes
 
 ## 1. What is Regression?
 
